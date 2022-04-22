@@ -27,8 +27,8 @@ expression (with an interquartile range of 0).
 
 ``` r
 ### load the cleaned dataset and ESIS functions
-lusc <- read.table(file = "/Users/kec2/GeneScreeningDemo1/LUSC.csv", header = T)
-source("/Users/kec2/GeneScreeningDemo1/source.R")
+lusc <- read.table(file = "LUSC.csv", header = T)
+source("source.R")
 ```
 
 ## Statistical Analysis
@@ -123,7 +123,7 @@ legend("bottomleft",
        bty = "n")
 ```
 
-<img src="GeneScreeningLUSC_files/figure-gfm/unnamed-chunk-6-1.png" style="display: block; margin: auto;" />
+<img src="fig/prognosis-1.png" style="display: block; margin: auto;" />
 
 The ESIS+PenCox model achieved nice separation of the two risks groups.
 Patients with a high-risk gene signature had a shorter median overall
